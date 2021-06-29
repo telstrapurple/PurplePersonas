@@ -1,2 +1,2 @@
-# PurplePersonas
+# Purple Personas
 Purple consulting personas.
