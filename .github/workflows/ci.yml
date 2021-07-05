@@ -28,7 +28,7 @@ jobs:
 
       # Prevent any issues/conflicts with Jekyll; https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/
       - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
+        run: touch ./public/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
