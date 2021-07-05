@@ -2,15 +2,15 @@
 	import { base } from '$app/paths';
 
 	export async function load({ fetch }) {
-		const posts = await fetch(`${base}/index.json`).then((r) => r.json());
+		const roles = await fetch(`${base}/index.json`).then((r) => r.json());
 		return {
-			props: { posts }
+			props: { roles }
 		};
 	}
 </script>
 
 <script>
-	export let posts;
+	export let roles;
 </script>
 
 <svelte:head>
@@ -19,10 +19,19 @@
 
 <div>
 	<h1>Purple Personas</h1>
-	<p class="info">{posts.length} posts.</p>
-	{#each posts as post}
-		<a href={`${base}/${post.slug}`}>
-			<h2 class="title">{post.metadata.title}</h2>
+	<p>
+		Blurb about Purple Personas - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		Pellentesque lobortis libero sollicitudin feugiat feugiat. Class aptent taciti sociosqu ad
+		litora torquent per conubia nostra, per inceptos himenaeos. In egestas erat nisl, at cursus
+		lacus luctus eu. Nam commodo metus sed est pulvinar euismod. Donec suscipit nec lacus vitae
+		imperdiet. Nam faucibus leo eget imperdiet posuere. Pellentesque gravida mauris vitae tortor
+		pulvinar efficitur. Phasellus sit amet bibendum sapien. Aliquam in placerat enim. Phasellus vel
+		accumsan velit. Maecenas placerat efficitur justo vel posuere.
+	</p>
+	<h2>Our Roles</h2>
+	{#each roles as role}
+		<a href={`${base}/${role.slug}`}>
+			<h3 class="title">{role.metadata.title}</h3>
 		</a>
 	{/each}
 </div>

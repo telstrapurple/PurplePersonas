@@ -2,11 +2,11 @@ import fs from 'fs';
 import { process } from '$lib/markdown';
 
 export function get() {
-	let posts = fs
-		.readdirSync('src/posts')
+	let roles = fs
+		.readdirSync('src/roles')
 		.filter((fileName) => /.+\.md$/.test(fileName))
 		.map((fileName) => {
-			const { metadata } = process(`src/posts/${fileName}`);
+			const { metadata } = process(`src/roles/${fileName}`);
 			return {
 				metadata,
 				slug: fileName.slice(0, -3)
@@ -15,7 +15,7 @@ export function get() {
 
 	// TODO: Add metadata to sort by order
 
-	let body = JSON.stringify(posts);
+	let body = JSON.stringify(roles);
 
 	return { body };
 }
