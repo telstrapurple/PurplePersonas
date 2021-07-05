@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Home</title>
+		<title>Consultant</title>
 
 		
 
@@ -12,7 +12,7 @@
 		<link rel="modulepreload" href="/PurplePersonas/_app/chunks/vendor-a41b0e1e.js">
 		<link rel="modulepreload" href="/PurplePersonas/_app/chunks/paths-45dac81d.js">
 		<link rel="modulepreload" href="/PurplePersonas/_app/pages/__layout.svelte-baff14e2.js">
-		<link rel="modulepreload" href="/PurplePersonas/_app/pages/index.svelte-e5d94e31.js">
+		<link rel="modulepreload" href="/PurplePersonas/_app/pages/[slug].svelte-14c18a10.js">
 		<link rel="stylesheet" href="/PurplePersonas/_app/assets/start-a8cd1609.css">
 
 		<script type="module">
@@ -30,13 +30,13 @@
 					error: null,
 					nodes: [
 						import("/PurplePersonas/_app/pages/__layout.svelte-baff14e2.js"),
-						import("/PurplePersonas/_app/pages/index.svelte-e5d94e31.js")
+						import("/PurplePersonas/_app/pages/[slug].svelte-14c18a10.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/",
+						path: "/consultant",
 						query: new URLSearchParams(""),
-						params: {}
+						params: {"slug":"consultant"}
 					}
 				}
 			});
@@ -49,14 +49,12 @@
 <div class="g-app-wrapper"><div><nav><a href="/PurplePersonas/"><h3 class="home">HOME</h3></a></nav></div>
 	
 
-<div><h1>Purple Personas</h1>
-	<p class="info">1 posts.</p>
-	<a href="/PurplePersonas/consultant"><h2 class="title">Consultant</h2>
-</a></div></div>
+<!-- HTML_TAG_START --><h1>Consultant</h1>
+<p>Here's some text about our Consultant.</p><!-- HTML_TAG_END --></div>
 
 
 
-	<script type="application/json" data-type="svelte-data" data-url="/index.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"[{\"metadata\":{\"title\":\"Consultant\"},\"slug\":\"consultant\"}]"}</script>
+	<script type="application/json" data-type="svelte-data" data-url="/consultant.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"{\"metadata\":{\"title\":\"Consultant\"},\"content\":\"\u003Ch1\u003EConsultant\u003C\u002Fh1\u003E\\n\u003Cp\u003EHere's some text about our Consultant.\u003C\u002Fp\u003E\"}"}</script>
 </div>
 	</body>
 </html>
