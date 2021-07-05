@@ -28,12 +28,12 @@ jobs:
 
       # Prevent any issues/conflicts with Jekyll; https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/
       - name: Add .nojekyll file
-        run: touch ./public/.nojekyll
+        run: touch ./build/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: public # The folder the action should deploy.
+          FOLDER: build # The folder the action should deploy.
           CLEAN: true # Automatically remove deleted files from the deploy branch
