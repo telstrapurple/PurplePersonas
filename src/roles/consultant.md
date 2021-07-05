@@ -11,4 +11,4 @@ title: Consultant
 - Through the work that I provide at customer sites, I have built a positive reputation for myself and for Purple.
 - I keep my customer and Purple stakeholders regularly informed of my work progress.
 - I am a proficient communicator using relevant formats and mediums.
-- I am progressing towards becoming a Senior Consultant.
+- I am progressing towards becoming a [Senior Consultant](seniorconsultant).
