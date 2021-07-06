@@ -4,6 +4,6 @@
 
 <div>
 	<nav>
-		<a href="{base}/"><h3 class="home">Home</h3></a>
+		<a href="{base}/"><img src={`${base}/tplogo-red.svg`} alt="Telstra Purple" /></a>
 	</nav>
 </div>

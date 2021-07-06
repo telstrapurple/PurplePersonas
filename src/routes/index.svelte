@@ -29,9 +29,11 @@
 		accumsan velit. Maecenas placerat efficitur justo vel posuere.
 	</p>
 	<h2>Our Roles</h2>
-	{#each roles as role}
-		<a href={`${base}/${role.slug}`} class="text-red-400">
-			<h3 class="title">{role.metadata.title}</h3>
-		</a>
-	{/each}
+	<div class="flex flex-row">
+		{#each roles as role}
+			<a href={`${base}/${role.slug}`} class="text-red-400">
+				<h3 class="title">{role.metadata.title}</h3>
+			</a>
+		{/each}
+	</div>
 </div>

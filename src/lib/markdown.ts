@@ -1,4 +1,3 @@
-// @ts-nocheck
 import unified from 'unified';
 import parse from 'remark-parse';
 import gfm from 'remark-gfm';
@@ -13,8 +12,8 @@ let parser = unified().use(parse).use(gfm).use(frontmatter, ['yaml']);
 
 let runner = unified().use(remark2rehype).use(highlight).use(rehypeStringify);
 
-export function process(filename) {
-	let tree = parser.parse(toVFile.readSync(filename));
+export function process(filename: string) {
+	let tree = parser.parse(toVFile.readSync(filename)) as any; // Not sure why the type is wrong, it definitely has a childen prop.
 	let metadata = null;
 	if (tree.children.length > 0 && tree.children[0].type === 'yaml') {
 		metadata = yaml.load(tree.children[0].value);
