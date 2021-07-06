@@ -15,4 +15,7 @@
 	<title>{post.metadata.title}</title>
 </svelte:head>
 
-{@html post.content}
+<article class="prose flex flex-row">
+	{@html post.content}
+	<img src={`${base}/${post.metadata.image}`} alt={post.metadata.imagealt} />
+</article>
