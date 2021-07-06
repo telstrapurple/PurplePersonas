@@ -2,15 +2,17 @@
 	import { base } from '$app/paths';
 
 	export async function load({ fetch }) {
-		const roles = await fetch(`${base}/index.json`).then((r) => r.json());
+    const roles = await fetch(`${base}/index.json`).then((r) => r.json());
 		return {
 			props: { roles }
 		};
 	}
 </script>
 
-<script>
-	export let roles;
+<script lang="ts">
+  import type { RoleDefinition } from './index.json';
+
+	export let roles: RoleDefinition[];
 </script>
 
 <svelte:head>

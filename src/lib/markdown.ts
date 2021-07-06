@@ -5,20 +5,34 @@ import frontmatter from 'remark-frontmatter';
 import remark2rehype from 'remark-rehype';
 import highlight from 'rehype-highlight';
 import rehypeStringify from 'rehype-stringify';
-import { toVFile } from 'to-vfile';
 import yaml from 'js-yaml';
 
-let parser = unified().use(parse).use(gfm).use(frontmatter, ['yaml']);
+export interface MarkdownMetadata {
+	title: string;
+	image: string;
+	imagealt: string;
+}
 
-let runner = unified().use(remark2rehype).use(highlight).use(rehypeStringify);
+export interface ProcessedMarkdown {
+	metadata: MarkdownMetadata;
+	content: string;
+}
 
-export function process(filename: string) {
-	let tree = parser.parse(toVFile.readSync(filename)) as any; // Not sure why the type is wrong, it definitely has a childen prop.
+const parser = unified().use(parse).use(gfm).use(frontmatter, ['yaml']);
+
+const runner = unified().use(remark2rehype).use(highlight).use(rehypeStringify);
+
+export async function process(file: string): Promise<ProcessedMarkdown> {
+	const tree = parser.parse(file) as any; // Not sure why the type is wrong, it definitely has a childen prop.
+
 	let metadata = null;
+
 	if (tree.children.length > 0 && tree.children[0].type === 'yaml') {
 		metadata = yaml.load(tree.children[0].value);
 		tree.children = tree.children.slice(1, tree.children.length);
 	}
-	let content = runner.stringify(runner.runSync(tree));
+
+	const content = runner.stringify(await runner.run(tree));
+
 	return { metadata, content };
 }

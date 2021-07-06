@@ -1,14 +1,18 @@
-<script context="module">
+<script context="module" lang="ts">
 	import { base } from '$app/paths';
-	export async function load({ page, fetch }) {
+  import type { Load } from '@sveltejs/kit';
+
+	export const load: Load = async ({ page, fetch }) => {
 		const slug = page.params.slug;
 		const post = await fetch(`${base}/${slug}.json`).then((r) => r.json());
 		return { props: { post } };
 	}
 </script>
 
-<script>
-	export let post;
+<script lang="ts">
+  import type {ProcessedMarkdown} from '$lib/markdown'
+
+	export let post: ProcessedMarkdown;
 </script>
 
 <svelte:head>
