@@ -4,6 +4,6 @@
 
 <div>
 	<nav>
-		<a href="{base}/"><h3 class="home">HOME</h3></a>
+		<a href="{base}/"><h3 class="home">Home</h3></a>
 	</nav>
 </div>
