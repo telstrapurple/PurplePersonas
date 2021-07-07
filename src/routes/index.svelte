@@ -2,7 +2,7 @@
 	import { base } from '$app/paths';
 
 	export async function load({ fetch }) {
-    const roles = await fetch(`${base}/index.json`).then((r) => r.json());
+		const roles = await fetch(`${base}/index.json`).then((r) => r.json());
 		return {
 			props: { roles }
 		};
@@ -10,7 +10,7 @@
 </script>
 
 <script lang="ts">
-  import type { RoleDefinition } from './index.json';
+	import type { RoleDefinition } from './index.json';
 
 	export let roles: RoleDefinition[];
 </script>
@@ -19,10 +19,10 @@
 	<title>Purple Personas</title>
 </svelte:head>
 
-<div>
+<div class="bg-grey-100 px-48 py-24">
 	<div class="flex flex-row">
 		<div class="flex flex-col">
-			<h1>Purple Personas</h1>
+			<h1 class="pb-12">Purple Personas</h1>
 			<p>
 				Blurb about Purple Personas - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 				Pellentesque lobortis libero sollicitudin feugiat feugiat. Class aptent taciti sociosqu ad
@@ -35,11 +35,11 @@
 		</div>
 		<img src={`${base}/people.svg`} alt="Group of diverse people" />
 	</div>
-	<h2>Our Roles</h2>
-	<div class="flex flex-row">
+	<h2 class="py-12">Our Roles</h2>
+	<div class="flex flex-row justify-between flex-wrap">
 		{#each roles as role}
 			<a href={`${base}/${role.slug}`} class="text-red-400">
-				<h3 class="title">{role.metadata.title}</h3>
+				<h3 class="text-red-100">{role.metadata.title}</h3>
 			</a>
 		{/each}
 	</div>

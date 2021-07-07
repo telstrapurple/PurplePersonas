@@ -28,6 +28,7 @@ export const get: RequestHandler<RoleDefinition[]> = async () => {
 	);
 
 	// TODO: Add metadata to sort by order
+	roles.sort((a, b) => a.metadata.sortorder - b.metadata.sortorder);
 
 	const body = JSON.stringify(roles);
 

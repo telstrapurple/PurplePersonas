@@ -2,6 +2,7 @@
 title: Consultant
 image: consultant.svg
 imagealt: A cartoon of a consultant
+sortorder: 1
 ---
 
 # Consultant

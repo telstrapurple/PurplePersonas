@@ -2,3 +2,25 @@
 /* Write your global styles here, in PostCSS syntax */
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply text-4xl;
+	}
+
+	h2 {
+		@apply text-2xl;
+	}
+
+	h3 {
+		@apply text-xl;
+	}
+
+	.role h1 {
+		@apply text-xl text-red-100 pb-10;
+	}
+
+	.role ul {
+		@apply list-disc list-inside pl-4;
+	}
+}

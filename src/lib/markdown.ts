@@ -11,6 +11,7 @@ export interface MarkdownMetadata {
 	title: string;
 	image: string;
 	imagealt: string;
+	sortorder: number;
 }
 
 export interface ProcessedMarkdown {
