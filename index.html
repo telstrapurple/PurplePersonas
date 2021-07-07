@@ -8,16 +8,16 @@
 
 		
 
-		<link rel="modulepreload" href="/PurplePersonas/_app/start-f697a4ac.js">
+		<link rel="modulepreload" href="/PurplePersonas/_app/start-a417eaab.js">
 		<link rel="modulepreload" href="/PurplePersonas/_app/chunks/vendor-09db1235.js">
 		<link rel="modulepreload" href="/PurplePersonas/_app/chunks/paths-45dac81d.js">
-		<link rel="modulepreload" href="/PurplePersonas/_app/pages/__layout.svelte-865d09af.js">
-		<link rel="modulepreload" href="/PurplePersonas/_app/pages/index.svelte-c01fd0ce.js">
+		<link rel="modulepreload" href="/PurplePersonas/_app/pages/__layout.svelte-522ee959.js">
+		<link rel="modulepreload" href="/PurplePersonas/_app/pages/index.svelte-59213bdf.js">
 		<link rel="stylesheet" href="/PurplePersonas/_app/assets/start-0826e215.css">
-		<link rel="stylesheet" href="/PurplePersonas/_app/assets/pages/__layout.svelte-43c23b27.css">
+		<link rel="stylesheet" href="/PurplePersonas/_app/assets/pages/__layout.svelte-98ef14ce.css">
 
 		<script type="module">
-			import { start } from "/PurplePersonas/_app/start-f697a4ac.js";
+			import { start } from "/PurplePersonas/_app/start-a417eaab.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"/PurplePersonas","assets":"/PurplePersonas"},
@@ -30,8 +30,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/PurplePersonas/_app/pages/__layout.svelte-865d09af.js"),
-						import("/PurplePersonas/_app/pages/index.svelte-c01fd0ce.js")
+						import("/PurplePersonas/_app/pages/__layout.svelte-522ee959.js"),
+						import("/PurplePersonas/_app/pages/index.svelte-59213bdf.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -47,10 +47,10 @@
 		<div id="svelte">
 
 
-<div><div><nav><a href="/PurplePersonas/"><img src="/PurplePersonas/tplogo-red.svg" alt="Telstra Purple"></a></nav></div>
+<div><div class="filter drop-shadow-md bg-white-100"><nav class="border-t-2 border-solid border-red-100"><a href="/PurplePersonas/"><img src="/PurplePersonas/tplogo-red.svg" alt="Telstra Purple" class="px-48 py-4"></a></nav></div>
 	
 
-<div><div class="flex flex-row"><div class="flex flex-col"><h1>Purple Personas</h1>
+<div class="bg-grey-100 px-48 py-24"><div class="flex flex-row"><div class="flex flex-col"><h1 class="pb-12">Purple Personas</h1>
 	<p>Blurb about Purple Personas - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 		Pellentesque lobortis libero sollicitudin feugiat feugiat. Class aptent taciti sociosqu ad
 		litora torquent per conubia nostra, per inceptos himenaeos. In egestas erat nisl, at cursus
@@ -60,14 +60,17 @@
 		vel accumsan velit. Maecenas placerat efficitur justo vel posuere.
 	</p></div>
 <img src="/PurplePersonas/people.svg" alt="Group of diverse people"></div>
-	<h2>Our Roles</h2>
-	<div class="flex flex-row"><a href="/PurplePersonas/consultant" class="text-red-400"><h3 class="title">Consultant</h3>
-	</a><a href="/PurplePersonas/seniorconsultant" class="text-red-400"><h3 class="title">Senior Consultant</h3>
+	<h2 class="py-12">Our Roles</h2>
+	<div class="flex flex-row justify-between flex-wrap"><a href="/PurplePersonas/consultant" class="text-red-400"><h3 class="text-red-100">Consultant</h3>
+	</a><a href="/PurplePersonas/seniorconsultant" class="text-red-400"><h3 class="text-red-100">Senior Consultant</h3>
+	</a><a href="/PurplePersonas/leadconsultant" class="text-red-400"><h3 class="text-red-100">Lead Consultant</h3>
+	</a><a href="/PurplePersonas/managingconsultant" class="text-red-400"><h3 class="text-red-100">Managing Consultant</h3>
+	</a><a href="/PurplePersonas/principalconsultant" class="text-red-400"><h3 class="text-red-100">Principal Consultant</h3>
 	</a></div></div></div>
 
 
 
-	<script type="application/json" data-type="svelte-data" data-url="/index.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"[{\"metadata\":{\"title\":\"Consultant\",\"image\":\"consultant.svg\",\"imagealt\":\"A cartoon of a consultant\"},\"slug\":\"consultant\"},{\"metadata\":{\"title\":\"Senior Consultant\",\"image\":\"seniorconsultant.svg\",\"imagealt\":\"A cartoon of a consultant\"},\"slug\":\"seniorconsultant\"}]"}</script>
+	<script type="application/json" data-type="svelte-data" data-url="/index.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"[{\"metadata\":{\"title\":\"Consultant\",\"image\":\"consultant.svg\",\"imagealt\":\"A cartoon of a consultant\",\"sortorder\":1},\"slug\":\"consultant\"},{\"metadata\":{\"title\":\"Senior Consultant\",\"image\":\"seniorconsultant.svg\",\"imagealt\":\"A cartoon of a consultant\",\"sortorder\":2},\"slug\":\"seniorconsultant\"},{\"metadata\":{\"title\":\"Lead Consultant\",\"image\":\"leadconsultant.svg\",\"imagealt\":\"A cartoon of a lead consultant\",\"sortorder\":3},\"slug\":\"leadconsultant\"},{\"metadata\":{\"title\":\"Managing Consultant\",\"image\":\"managingconsultant.svg\",\"imagealt\":\"A cartoon of a managing consultant\",\"sortorder\":4},\"slug\":\"managingconsultant\"},{\"metadata\":{\"title\":\"Principal Consultant\",\"image\":\"principalconsultant.svg\",\"imagealt\":\"A cartoon of a principal consultant\",\"sortorder\":5},\"slug\":\"principalconsultant\"}]"}</script>
 </div>
 	</body>
 </html>
