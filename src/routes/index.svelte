@@ -24,14 +24,14 @@
 		<div class="flex flex-col">
 			<h1 class="pb-12">Purple Personas</h1>
 			<p>
-				Blurb about Purple Personas - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Pellentesque lobortis libero sollicitudin feugiat feugiat. Class aptent taciti sociosqu ad
-				litora torquent per conubia nostra, per inceptos himenaeos. In egestas erat nisl, at cursus
-				lacus luctus eu. Nam commodo metus sed est pulvinar euismod. Donec suscipit nec lacus vitae
-				imperdiet. Nam faucibus leo eget imperdiet posuere. Pellentesque gravida mauris vitae tortor
-				pulvinar efficitur. Phasellus sit amet bibendum sapien. Aliquam in placerat enim. Phasellus
-				vel accumsan velit. Maecenas placerat efficitur justo vel posuere.
+				This page describes each of the consulting roles at Telstra Purple. It seeks to describe
+				some defining characteristics about each role to give our people and future Purplonians a
+				clear understanding of what we do.
 			</p>
+			<br />
+			<p>It's the anchor point used through all of our feedback and promotion cycles.</p>
+			<br />
+			<p>It's a living document, maintained by the very people it affects.</p>
 		</div>
 		<img src={`${base}/people.svg`} alt="Group of diverse people" />
 	</div>
