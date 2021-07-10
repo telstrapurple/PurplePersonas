@@ -19,7 +19,7 @@
 	<title>{post.metadata.title}</title>
 </svelte:head>
 
-<div class="flex flex-row px-48 pt-14">
+<div class="flex flex-row px-12 xl:px-48 pt-4 xl:pt-14">
 	<article class="role">
 		{@html post.content}
 	</article>

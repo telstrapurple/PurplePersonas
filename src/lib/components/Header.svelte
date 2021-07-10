@@ -5,10 +5,10 @@
 	export let roles: RoleDefinition[];
 </script>
 
-<div class="bg-gray-lighter px-48 py-24">
-	<div class="flex flex-row">
+<div class="bg-gray-lighter px-12 xl:px-48 py-6 xl:py-24">
+	<div class="flex flex-col xl:flex-row">
 		<div class="flex flex-col">
-			<h1 class="pb-12">Purple Personas</h1>
+			<h1 class="pb-3 xl:pb-12">Purple Personas</h1>
 			<p>
 				This page describes each of the consulting roles at Telstra Purple. It seeks to describe
 				some defining characteristics about each role to give our people and future Purplonians a
@@ -21,8 +21,8 @@
 		</div>
 		<img src={`${base}/people.svg`} alt="Group of diverse people" />
 	</div>
-	<h2 class="py-12">Our Roles</h2>
-	<div class="flex flex-row justify-between flex-wrap">
+	<h2 class="py-3 xl:py-12">Our Roles</h2>
+	<div class="flex flex-col xl:flex-row justify-between flex-wrap">
 		{#each roles as role}
 			<a href={`${base}/${role.slug}`} class="text-red">
 				<h3>{role.metadata.title}</h3>
