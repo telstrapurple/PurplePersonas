@@ -5,7 +5,7 @@
 	export let roles: RoleDefinition[];
 </script>
 
-<div class="bg-grey-100 px-48 py-24">
+<div class="bg-gray-lighter px-48 py-24">
 	<div class="flex flex-row">
 		<div class="flex flex-col">
 			<h1 class="pb-12">Purple Personas</h1>
@@ -24,8 +24,8 @@
 	<h2 class="py-12">Our Roles</h2>
 	<div class="flex flex-row justify-between flex-wrap">
 		{#each roles as role}
-			<a href={`${base}/${role.slug}`} class="text-red-400">
-				<h3 class="text-red-100">{role.metadata.title}</h3>
+			<a href={`${base}/${role.slug}`} class="text-red">
+				<h3>{role.metadata.title}</h3>
 			</a>
 		{/each}
 	</div>

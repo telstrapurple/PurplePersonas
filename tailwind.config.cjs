@@ -1,19 +1,36 @@
+const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 const config = {
 	mode: 'jit',
 	purge: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
+		// Official TP Theme
 		colors: {
-			// TODO: I assume these are in the Purple style guide and we can grab all of them somewhere...
+			transparent: 'transparent',
+			current: 'currentColor',
+			black: '#282828',
+			white: colors.white,
+			gray: {
+				lightest: '#F9F9F9',
+				lighter: '#F3F3F3',
+				light: '#E6E6E6',
+				DEFAULT: '#D0D0D0',
+				dark: '#414141'
+			},
 			red: {
-				100: '#ED0037'
+				lightest: '#FEF5F7',
+				lighter: '#FDD9E1',
+				light: '#FBB3C3',
+				DEFAULT: '#ED0037',
+				dark: '#9A0024'
 			},
-			grey: {
-				100: '#F6F6F6'
-			},
-			white: {
-				100: '#FFFFFF'
+			blue: {
+				lightest: '#ECF7FE',
+				lighter: '#D8EFFE',
+				light: '#B2E0FD',
+				DEFAULT: '#0099F8',
+				dark: '#001E82'
 			}
 		},
 		fontFamily: {
