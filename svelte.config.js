@@ -10,13 +10,6 @@ const kit = {
 	target: '#svelte'
 };
 
-if (!dev) {
-	kit.paths = {
-		base: '/PurplePersonas',
-		assets: '/PurplePersonas'
-	};
-}
-
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
