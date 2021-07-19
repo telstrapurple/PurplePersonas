@@ -4,7 +4,9 @@ roles: Consultant,Senior Consultant,Lead Consultant,Managing Consultant,Principa
 sortorder: 1
 ---
 
-# Consultant
+# Consultant role requirements
+
+![A cartoon of a consultant][consultantimage]
 
 - I am proficient in my field and deliver net positive value to my team and customers.
 - I consistently demonstrate the Purple Beliefs.
@@ -13,13 +15,13 @@ sortorder: 1
 - Through the work that I provide at customer sites, I have built a positive reputation for myself and for Purple.
 - I keep my customer and Purple stakeholders regularly informed of my work progress.
 - I am a proficient communicator using relevant formats and mediums.
-- I am progressing towards becoming a [Senior Consultant](#seniorconsultant).
-
-![A cartoon of a consultant][consultantimage]
+- I am progressing towards becoming a [Senior Consultant](#senior-consultant-role-requirements).
 
 [consultantimage]: https://personas.purple.telstra.com/consultant.svg 'Consultant'
 
-# Senior Consultant
+# Senior Consultant role requirements
+
+![A cartoon of a senior consultant][seniorconsultantimage]
 
 - I am accomplished in my field.
 - I work well independently and in a team.
@@ -29,11 +31,11 @@ sortorder: 1
 - I set, manage and communicate clear expectations.
 - My influence positively affects individuals within my team.
 
-![A cartoon of a senior consultant][seniorconsultantimage]
-
 [seniorconsultantimage]: https://personas.purple.telstra.com/seniorconsultant.svg 'Senior Consultant'
 
-# Lead Consultant
+# Lead Consultant role requirements
+
+![A cartoon of a lead consultant][leadconsultantimage]
 
 - I successfully lead typical initiatives or engagements.
 - I am recognised by my peers as someone who has in-depth knowledge and expertise in my field.
@@ -50,11 +52,11 @@ sortorder: 1
 - I learn my customer's business and discover opportunities to create value using Purple's capability.
 - When required I contribute to business development by working with other teams within Purple.
 
-![A cartoon of a lead consultant][leadconsultantimage]
-
 [leadconsultantimage]: https://personas.purple.telstra.com/leadconsultant.svg 'Lead Consultant'
 
-# Managing Consultant
+# Managing Consultant role requirements
+
+![A cartoon of a managing consultant][managingconsultantimage]
 
 - I successfully lead high-risk initiatives or engagements.
 - I am recognised as a trusted source for information in my field and my innovative ideas influence and guide others.
@@ -65,11 +67,11 @@ sortorder: 1
 - I engage with all project stakeholders as peers and challenge their decisions when necessary to provide them with the best outcome.
 - I contribute to business development opportunities by working with other teams within Purple.
 
-![A cartoon of a managing consultant][managingconsultantimage]
-
 [managingconsultantimage]: https://personas.purple.telstra.com/managingconsultant.svg 'Managing Consultant'
 
-# Principal Consultant
+# Principal Consultant role requirements
+
+![A cartoon of a principal consultant][principalconsultantimage]
 
 - I ensure the successful delivery of our engagements.
 - I support and advocate for our people.
@@ -80,7 +82,5 @@ sortorder: 1
 - I engage customers about their problems and goals and advise the best strategic approach and solution.
 - I am an integral part of the sales process, providing expert advice and guidance, building trust, engaging customers, and helping to close the deal.
 - I leverage the commercial model used by Purple to ensure successful and profitable engagements.
-
-![A cartoon of a principal consultant][principalconsultantimage]
 
 [principalconsultantimage]: https://personas.purple.telstra.com/principalconsultant.svg 'Principal Consultant'
