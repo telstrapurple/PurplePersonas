@@ -42,6 +42,10 @@ const config = {
 			300: '300px',
 			...defaultTheme.minHeight
 		},
+		maxHeight: {
+			300: '300px',
+			...defaultTheme.maxHeight
+		},
 		extend: {}
 	},
 	plugins: [require('@tailwindcss/typography')]

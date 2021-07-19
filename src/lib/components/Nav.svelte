@@ -8,7 +8,7 @@
 			<img
 				src={`${base}/tplogo-red.svg`}
 				alt="Telstra Purple"
-				class="px-12 xl:px-48 py-2 xl:py-4"
+				class="px-12 lg:px-48 py-2 lg:py-4"
 			/>
 		</a>
 	</nav>

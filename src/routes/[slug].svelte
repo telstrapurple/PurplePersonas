@@ -19,10 +19,10 @@
 	<title>{post.metadata.title}</title>
 </svelte:head>
 
-<div class="flex flex-col sm:flex-row px-12 xl:px-48 pt-4 xl:pt-14 bg-gray-lighter">
+<div class="flex flex-col sm:flex-row px-12 lg:px-48 pt-4 lg:pt-14 bg-gray-lighter">
 	<article class="portfolio">
-		<h2 class="pb-4 xl:pb-10">Our roles in {post.metadata.title}</h2>
-		<div class="flex flex-col xl:flex-row justify-around pb-4 xl:pb-14">
+		<h2 class="pb-4 lg:pb-10">Our roles in {post.metadata.title}</h2>
+		<div class="flex flex-col lg:flex-row justify-around pb-4 lg:pb-14">
 			{#each post.metadata.roles.split(',') as role}
 				<a
 					href={`#${role.toLocaleLowerCase().replace(' ', '-')}-role-requirements`}
