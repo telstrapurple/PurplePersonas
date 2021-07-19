@@ -11,12 +11,11 @@
 			<div class="flex flex-col">
 				<h1 class="pb-3 lg:pb-12">Purple Personas</h1>
 				<p>
-					This page describes each of the consulting roles at Telstra Purple. It seeks to describe
-					some defining characteristics about each role to give our people and future Purplonians a
-					clear understanding of what we do.
+					This page describes each of the consulting roles at Telstra Purple in the Digital
+					portfolio (Development, Data and Design). It seeks to describe some defining
+					characteristics about each role to give our people and future Purplonians a clear
+					understanding of what we do.
 				</p>
-				<br />
-				<p>It's the anchor point used through all of our feedback and promotion cycles.</p>
 			</div>
 			<img src={`${base}/people.svg`} alt="Group of diverse people" />
 		</div>
