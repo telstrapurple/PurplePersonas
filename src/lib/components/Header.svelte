@@ -28,6 +28,14 @@
 					</a>
 				{/each}
 			</div>
+		{:else}
+			<div class="hidden">
+				{#each portfolios as portfolio}
+					<a href={`${base}/${portfolio.slug}`} class="text-red">
+						<h3>{portfolio.metadata.title}</h3>
+					</a>
+				{/each}
+			</div>
 		{/if}
 	</div>
 </div>
