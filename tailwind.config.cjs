@@ -38,6 +38,10 @@ const config = {
 			serif: [...defaultTheme.fontFamily.serif],
 			mono: [...defaultTheme.fontFamily.mono]
 		},
+		minHeight: {
+			300: '300px',
+			...defaultTheme.minHeight
+		},
 		extend: {}
 	},
 	plugins: [require('@tailwindcss/typography')]
