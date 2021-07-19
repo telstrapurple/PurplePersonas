@@ -16,7 +16,7 @@
 </script>
 
 <svelte:head>
-	<title>{post.metadata.title}</title>
+	<title>Purple Personas - {post.metadata.title}</title>
 </svelte:head>
 
 <div class="px-12 lg:px-32 max-w-screen-xl">
