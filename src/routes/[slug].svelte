@@ -3,6 +3,7 @@
 	import type { Load } from '@sveltejs/kit';
 
 	export const load: Load = async ({ page, fetch }) => {
+		debugger;
 		const slug = page.params.slug;
 		const post = await fetch(`${base}/${slug}.json`).then((r) => r.json());
 		return { props: { post } };
