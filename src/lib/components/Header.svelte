@@ -5,7 +5,7 @@
 	export let portfolios: PortfolioDefinition[];
 </script>
 
-<div class="px-12 lg:px-32 py-6 lg:py-24">
+<div class="px-12 lg:px-32 pt-6 lg:pt-24 pb-3 lg:pb-12">
 	<div class="max-w-screen-xl flex flex-col">
 		<div class="flex flex-col lg:flex-row">
 			<div class="flex flex-col">
