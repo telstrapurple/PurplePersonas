@@ -17,11 +17,11 @@
 	}
 
 	.portfolio h1 {
-		@apply text-xl text-red pb-4 lg:pb-10;
+		@apply text-xl text-red pb-12;
 	}
 
 	.portfolio ul {
-		@apply list-disc list-outside pl-4 pb-4 lg:pb-10 lg:min-h-300;
+		@apply list-disc list-outside pl-4 pb-12 lg:min-h-300;
 	}
 
 	.portfolio a {
@@ -30,6 +30,14 @@
 
 	.portfolio p {
 		@apply lg:float-right p-4 lg:py-0;
+	}
+
+	.smoothScroll {
+		scroll-behavior: smooth;
+	}
+
+	html {
+		@apply smoothScroll;
 	}
 }
 
