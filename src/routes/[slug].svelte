@@ -20,8 +20,15 @@
 </svelte:head>
 
 <div class="flex flex-col sm:flex-row px-12 xl:px-48 pt-4 xl:pt-14">
-	<article class="role">
+	<article class="portfolio">
+		<h2>Our roles in {post.metadata.title}</h2>
+		<div class="flex flex-row justify-around pb-4 xl:pb-14">
+			{#each post.metadata.roles.split(',') as role}
+				<a href={`#${role.toLocaleLowerCase().replace(' ', '-')}`} class="text-red">
+					<h3>{role}</h3>
+				</a>
+			{/each}
+		</div>
 		{@html post.content}
 	</article>
-	<img src={`${base}/${post.metadata.image}`} alt={post.metadata.imagealt} />
 </div>

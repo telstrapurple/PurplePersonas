@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { RoleDefinition } from 'src/routes/index.json';
+	import type { PortfolioDefinition } from 'src/routes/index.json';
 	import { base } from '$app/paths';
 
-	export let roles: RoleDefinition[];
+	export let portfolios: PortfolioDefinition[];
 </script>
 
 <div class="bg-gray-lighter px-12 xl:px-48 py-6 xl:py-24">
@@ -21,11 +21,11 @@
 		</div>
 		<img src={`${base}/people.svg`} alt="Group of diverse people" />
 	</div>
-	<h2 class="py-3 xl:py-12">Our Roles</h2>
+	<h2 class="py-3 xl:py-12">Our Portfolios</h2>
 	<div class="flex flex-col xl:flex-row justify-between flex-wrap">
-		{#each roles as role}
-			<a href={`${base}/${role.slug}`} class="text-red">
-				<h3>{role.metadata.title}</h3>
+		{#each portfolios as portfolio}
+			<a href={`${base}/${portfolio.slug}`} class="text-red">
+				<h3>{portfolio.metadata.title}</h3>
 			</a>
 		{/each}
 	</div>

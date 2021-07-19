@@ -2,9 +2,9 @@
 	import { base } from '$app/paths';
 
 	export async function load({ fetch }) {
-		const roles = await fetch(`${base}/index.json`).then((r) => r.json());
+		const portfolios = await fetch(`${base}/index.json`).then((r) => r.json());
 		return {
-			props: { roles }
+			props: { portfolios }
 		};
 	}
 </script>
@@ -12,14 +12,14 @@
 <script lang="ts">
 	import '../app.postcss';
 	import Nav from '$lib/components/Nav.svelte';
-	import type { RoleDefinition } from './index.json';
+	import type { PortfolioDefinition } from './index.json';
 	import Header from '$lib/components/Header.svelte';
 
-	export let roles: RoleDefinition[];
+	export let portfolios: PortfolioDefinition[];
 </script>
 
 <div>
 	<Nav />
-	<Header {roles} />
+	<Header {portfolios} />
 	<slot />
 </div>
