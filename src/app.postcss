@@ -1,0 +1,63 @@
+@tailwind base;
+/* Write your global styles here, in PostCSS syntax */
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply text-4xl;
+	}
+
+	h2 {
+		@apply text-2xl;
+	}
+
+	h3 {
+		@apply text-xl;
+	}
+
+	.portfolio h1 {
+		@apply text-3xl text-red pb-12;
+	}
+
+	.portfolio ul {
+		@apply list-disc list-outside pl-4 pb-12 lg:min-h-300;
+	}
+
+	.portfolio a {
+		@apply text-red;
+	}
+
+	.portfolio p {
+		@apply lg:float-right p-4 pt-0 lg:py-0;
+	}
+
+	.smoothScroll {
+		scroll-behavior: smooth;
+	}
+
+	html {
+		@apply smoothScroll;
+	}
+}
+
+@font-face {
+	font-family: 'TelstraAkkurat';
+	src: url('https://personas.purple.telstra.com/TelstraAkkuratWeb-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TelstraAkkurat';
+	src: url('https://personas.purple.telstra.com/TelstraAkkuratWeb-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TelstraAkkurat';
+	src: url('https://personas.purple.telstra.com/TelstraAkkuratWeb-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
