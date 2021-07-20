@@ -1,6 +1,10 @@
-name: Build and Deploy
+name: Test and Build
 
-on: [push]
+# On a pull request to main, run the checks and build.
+on:
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build-and-deploy:
@@ -15,25 +19,20 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+      - name: Install Node 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
 
-      - run: npm ci
+      - name: Install Packages 📦
+        run: npm ci
 
-      - run: npm run build
+      - name: Lint 🧹
+        run: npm run lint
+
+      - name: Svelte diagnostics 🔮
+        run: npm run check
+
+      - run: npm run build 🛠️
         env:
           CI: true
-
-      # Prevent any issues/conflicts with Jekyll; https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/
-      - name: Add .nojekyll file
-        run: touch ./build/.nojekyll
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.6.2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
-          CLEAN: true # Automatically remove deleted files from the deploy branch
