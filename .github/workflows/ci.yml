@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  test-and-build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
