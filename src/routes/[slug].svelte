@@ -13,7 +13,24 @@
 	import type { ProcessedMarkdown } from '$lib/markdown';
 
 	export let post: ProcessedMarkdown;
+
+	export const scrollToTop = () => {
+		window.scrollTo(0, 0);
+	};
+
+	export const handleScroll = () => {
+		let scrollButton = document.getElementById('scrollToTopButton');
+		if (window.scrollY > 500) {
+			scrollButton.classList.add('block');
+			scrollButton.classList.remove('hidden');
+		} else {
+			scrollButton.classList.add('hidden');
+			scrollButton.classList.remove('block');
+		}
+	};
 </script>
+
+<svelte:window on:scroll={handleScroll} />
 
 <svelte:head>
 	<title>Purple Personas - {post.metadata.title}</title>
@@ -34,3 +51,8 @@
 		{@html post.content}
 	</article>
 </div>
+<button
+	id="scrollToTopButton"
+	on:click={() => scrollToTop()}
+	class="fixed bottom-5 right-7 bg-red text-white p-3 text-lg rounded-xl hidden">Top</button
+>
