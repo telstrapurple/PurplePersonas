@@ -1,7 +1,7 @@
 ---
-title: Digital
+title: Secure and Adaptive Infrastructure
 roles: Consultant,Senior Consultant,Lead Consultant,Managing Consultant,Principal Consultant
-sortorder: 1
+sortorder: 3
 ---
 
 # Consultant role requirements

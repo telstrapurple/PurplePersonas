@@ -1,8 +1,21 @@
 ---
-title: Digital
-roles: Consultant,Senior Consultant,Lead Consultant,Managing Consultant,Principal Consultant
-sortorder: 1
+title: Managed Services
+roles: Associate Consultant,Consultant,Senior Consultant,Lead Consultant,Managing Consultant,Principal Consultant
+sortorder: 2
 ---
+
+# Associate Consultant role requirements
+
+![A cartoon of a associate consultant][associateconsultantimage]
+
+I am focused on developing my capabilities to deliver value to our customers.
+
+- I deliver net positive value to the team.
+- I work well in a team.
+- I take a pro-active approach to my professional development.
+- I consistently demonstrate the Purple Beliefs.
+
+[associateconsultantimage]: https://personas.purple.telstra.com/associateconsultant.svg 'Associate Consultant'
 
 # Consultant role requirements
 
