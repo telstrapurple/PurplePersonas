@@ -41,7 +41,9 @@
 	<div class="flex flex-col lg:flex-row justify-start pb-2 lg:pb-8">
 		{#each post.metadata.roles.split(',') as role}
 			<a href={`#${role.toLocaleLowerCase().replace(' ', '-')}-role-requirements`} class="text-red">
-				<div class="rounded-lg px-5 py-2 bg-black text-white text-lg mr-4 mb-2 hover:bg-red">{role}</div>
+				<div class="rounded-lg px-5 py-2 bg-black text-white text-lg mr-4 mb-2 hover:bg-red">
+					{role}
+				</div>
 			</a>
 		{/each}
 	</div>
