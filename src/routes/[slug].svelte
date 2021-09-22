@@ -36,12 +36,14 @@
 	<title>Purple Personas - {post.metadata.title}</title>
 </svelte:head>
 
-<div class="px-12 lg:px-32 max-w-screen-xl">
-	<h2 class="pb-4 lg:pb-10 text-black text-xl">Our roles</h2>
-	<div class="flex flex-col lg:flex-row justify-between pb-4 lg:pb-14">
+<div class="px-12 lg:px-32 max-w-full bg-gray">
+	<h2 class="pb-4 lg:pb-4 text-black text-xl">Our roles</h2>
+	<div class="flex flex-col lg:flex-row justify-start pb-2 lg:pb-8">
 		{#each post.metadata.roles.split(',') as role}
 			<a href={`#${role.toLocaleLowerCase().replace(' ', '-')}-role-requirements`} class="text-red">
-				<h3 class="text-lg">{role}</h3>
+				<div class="rounded-lg px-5 py-2 bg-black text-white text-lg mr-4 mb-2 hover:bg-red">
+					{role}
+				</div>
 			</a>
 		{/each}
 	</div>
