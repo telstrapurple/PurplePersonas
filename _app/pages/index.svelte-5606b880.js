@@ -1,0 +1,1 @@
+import{S as s,i as e,s as t,L as a,d as o,F as n}from"../chunks/vendor-2e27399c.js";function r(s){return{c(){this.h()},l(s){a('[data-svelte="svelte-8noi89"]',document.head).forEach(o),this.h()},h(){document.title="Purple Personas"},m:n,p:n,i:n,o:n,d:n}}class c extends s{constructor(s){super(),e(this,s,null,r,t,{})}}export{c as default};
