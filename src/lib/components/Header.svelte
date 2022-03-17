@@ -12,8 +12,8 @@
 				<h1 class="pb-3 lg:pb-12">Purple Personas</h1>
 				<p class="max-w-prose">
 					This page describes each of the Consulting roles at Telstra Purple in the various
-					portfolios. It seeks to describe some defining characteristics about each role to give our
-					people and future Purplonians a clear understanding of what we do.
+					portfolios and capabilities. It seeks to describe some defining characteristics about each
+					role to give our people and future Purplonians a clear understanding of what we do.
 					<br /><br />
 					If you're interested to see more roles at Telstra Purple, make sure to check out
 					<a href="http://purple.telstra.com/careers" class="text-red">Telstra Purple Careers</a>.
@@ -22,7 +22,7 @@
 			<img src={`${base}/people.svg`} alt="Group of diverse people" class="max-h-300" />
 		</div>
 		{#if portfolios.length > 1}
-			<h2 class="py-3 lg:pt-12 lg:pb-2">Our portfolios</h2>
+			<h2 class="py-3 lg:pt-12 lg:pb-2">Our portfolios and capabilities</h2>
 			<div class="flex flex-col lg:flex-row justify-start flex-wrap">
 				{#each portfolios as portfolio}
 					<a href={`${base}/${portfolio.slug}`}>

@@ -37,7 +37,7 @@
 </svelte:head>
 
 <div class="px-12 lg:px-32 max-w-full bg-gray">
-	<h2 class="pb-4 lg:pb-4 text-black text-xl">Our roles</h2>
+	<h2 class="pb-4 lg:pb-4 text-black text-xl">{post.metadata.title} roles</h2>
 	<div class="flex flex-col lg:flex-row justify-start pb-2 lg:pb-8">
 		{#each post.metadata.roles.split(',') as role}
 			<a href={`#${role.toLocaleLowerCase().replace(' ', '-')}-role-requirements`} class="text-red">
