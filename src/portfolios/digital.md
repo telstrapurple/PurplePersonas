@@ -101,12 +101,12 @@ I am the custodian of delivery, with a deep understanding of Purple and customer
 
 I am a custodian of all operations in my squad, with a deep understanding of our people and our engagement needs, focusing on the contractual relationship between clients and Purple. I have a strong and positive influence in building engagement and relationships between our people.
 
-- I upload our delivery model from the beginning to the end of our engagements.
+- I uphold our delivery model from the beginning to the end of our engagements.
 - I work with workforce planning to ensure engagements are staffed timely and appropriately.
 - I govern the presales process, continuously reviewing and optimising our approach.
 - I am involved in our recruitment process.
 - I support employee lifecycle milestones such as probations and role changes, stepping in to facilitate when needed.
-- I facilitate the organization and execution of employee events.
+- I facilitate the organisation and execution of employee events.
 - I influence and encourage those around me to demonstrate Purple beliefs.
 - I help drive consultant engagement and help make my squad a great place to work.
 - I support and advocate for our people.
